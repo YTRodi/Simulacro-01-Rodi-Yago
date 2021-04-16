@@ -1,0 +1,17 @@
+<h2>Detalle película</h2>
+
+<div class="container" *ngIf="peliculaParaMostrar">
+  <p>
+    {{ peliculaParaMostrar.nombre }}
+  </p>
+
+  <p>
+    {{ peliculaParaMostrar.tipo }}
+  </p>
+
+  <p>
+    {{ peliculaParaMostrar.fechaEstreno }}
+  </p>
+
+  <img [src]="peliculaParaMostrar.foto" alt="Image" width="50" height="50" />
+</div>

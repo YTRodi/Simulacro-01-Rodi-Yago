@@ -1,0 +1,13 @@
+<h2>Alta película</h2>
+<div class="container" *ngIf="peliculaNueva">
+  <input type="text" [(ngModel)]="peliculaNueva.nombre" />
+  <button class="btn btn-primary" (click)="guardarNuevaPelicula()">
+    Crear
+  </button>
+</div>
+
+<div class="container" *ngIf="!peliculaNueva">
+  <button class="btn btn-primary" (click)="hacerNuevaPelicula()">
+    Nueva película
+  </button>
+</div>
